@@ -1,0 +1,1318 @@
+fileFormatVersion: 2
+guid: 85d949ad8e6a4e046823d4c6955b81f7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bitmask references gif_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfa334b4050b6d4295988e2ccb2188f
+      internalID: -2134211148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c73d3aff337c943a55cdf44a9ac227
+      internalID: 972435204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73c9ccb423b78b40be4e9f4d706b9ff
+      internalID: -1429421342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7379247516cf52c408068a1875ecc6f5
+      internalID: -455259539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_17
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9586f4e82986d1f4badba3d9cca95a5c
+      internalID: -1689507508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_18
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd7579d4854afb47859a9ebebc1ac1b
+      internalID: 2030619452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_19
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ef4ca831c78d1418ff9fd4480ba7b7
+      internalID: -1165982294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_20
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fbb97fcfa52e84eac1f533d3e08cce
+      internalID: 1878182148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619fb33d8b5d7954aa5b2bb696f22f66
+      internalID: 1065507485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_22
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 444
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4d020cc640eeb48b1426ff60ca5ed1
+      internalID: 546634823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009612d6893959f48bae6086dad9fe97
+      internalID: -51942739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_27
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5e9aa927e776a46b262f10c755853f
+      internalID: -180520441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_28
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993088fa5ba798e4688d365667f76c13
+      internalID: -1201194168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_29
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73afdd05962ae648adeea655a8a1520
+      internalID: 265630994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_30
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c13631f7b3cb04ebdc36bfef4ac838
+      internalID: -2088382815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_31
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93147621a98982f4f90a2998bf591202
+      internalID: 642921479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b83a83cc07f4a4bb67a390ddf71879
+      internalID: -1571844123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_33
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345dc34666f3bd844bd75d444700e6b7
+      internalID: -133765999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8f7fe154e125d499a7b4638e5a6c0e
+      internalID: -1054757958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_35
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 406
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc7f110eb1f1e1499429e64769d3254
+      internalID: -1478324304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9869d40c671b2a3438db8054322b92cb
+      internalID: 2139334647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_40
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a29741d151a1074a809c3ee03fa67d9
+      internalID: -559921413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_41
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc4601f934cc66478179141b81c6159
+      internalID: -279649960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_42
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1f67c4f40ac0146a60bd2b9d9f088c
+      internalID: -1056322068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_43
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebda5260785348c48ab21fd3acbe44ce
+      internalID: 18419595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_44
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c509773ebb7bc944abfb273c2b63b9b0
+      internalID: 922944495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_45
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7357ae15e2f38d468ef0be2f81da811
+      internalID: 1217745549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_46
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f03587e96383a4787631033f6c096b
+      internalID: 955914485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_47
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc707ca83802afe40a1991cdb6598527
+      internalID: -1096255940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_48
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b93194e051c61d4ebcfdfe79111c764
+      internalID: 787635290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_49
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 368
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce80f1349d2c7a74d9da63a1233a1bcf
+      internalID: 1403721982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf6c27dfafa7a948a3af4d094dc3d36
+      internalID: 452162320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_53
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba78c682873c1a44bfcdfbda2726141
+      internalID: -1441866717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_54
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4281f7925777f4d4a8d2f76a20f02056
+      internalID: 1271113593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_55
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0c1be9dbb6ab64990c46e597103f53
+      internalID: 1063047254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_56
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cebaf568a4051945a2da90b2f7ca3b5
+      internalID: 358177154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_57
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cc4417755fa894399f6fb7d221d4f2
+      internalID: -1526794275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_58
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcc9161ca39bc54694b5d597e7f834c
+      internalID: -1098739915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_59
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9558a491734d740a9bc0bc744a9e2e
+      internalID: 813181740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_60
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b256e4bd3a71074a829225aad48d679
+      internalID: 1888401781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_61
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec85ea2f8e46494cb448531158cbdbd
+      internalID: 775002740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_62
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 330
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb975ea52f3456047b4d0337fee01b24
+      internalID: -329904919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96805af32ab18b4d8b7fcfe258e62ad
+      internalID: 292930881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_69
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b282d18c748a24f98701cb138c2a2c
+      internalID: 355644546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_70
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b747d3a6b78e7f4c855ba08ce090458
+      internalID: -872275309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_71
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a724440409470df45bf5844458e8cf7e
+      internalID: 2058885190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_72
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483a66ba6552bda4cb96ad8a58ec6e7c
+      internalID: 683469451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitmask references gif_73
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947b3634fccf811409a5dde027aa5ef1
+      internalID: 399791048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bitmask references gif_0: -54446802
+      Bitmask references gif_1: -79376623
+      Bitmask references gif_10: -477085057
+      Bitmask references gif_100: -1470598269
+      Bitmask references gif_101: 446126124
+      Bitmask references gif_102: 1047779999
+      Bitmask references gif_103: 794048671
+      Bitmask references gif_104: -992476969
+      Bitmask references gif_105: 1564287465
+      Bitmask references gif_106: -1252576425
+      Bitmask references gif_107: 793673206
+      Bitmask references gif_108: -1663204865
+      Bitmask references gif_109: 832692540
+      Bitmask references gif_11: -1747977837
+      Bitmask references gif_110: -2129573445
+      Bitmask references gif_111: -1785184223
+      Bitmask references gif_112: 500478380
+      Bitmask references gif_113: 1810181635
+      Bitmask references gif_114: -2086072429
+      Bitmask references gif_115: -1653374680
+      Bitmask references gif_116: 1480892021
+      Bitmask references gif_117: 1165907603
+      Bitmask references gif_118: -587980219
+      Bitmask references gif_119: -124634177
+      Bitmask references gif_12: -1796309943
+      Bitmask references gif_120: 1308325817
+      Bitmask references gif_121: -1134323626
+      Bitmask references gif_122: 1485171074
+      Bitmask references gif_123: -92634056
+      Bitmask references gif_124: 1595280182
+      Bitmask references gif_125: 1732604594
+      Bitmask references gif_126: -1901505751
+      Bitmask references gif_127: 616717019
+      Bitmask references gif_128: -607536346
+      Bitmask references gif_129: 321398671
+      Bitmask references gif_13: -2134211148
+      Bitmask references gif_130: -978849024
+      Bitmask references gif_131: 941691669
+      Bitmask references gif_132: 500702586
+      Bitmask references gif_133: -541042431
+      Bitmask references gif_134: -1093420289
+      Bitmask references gif_135: 1187761193
+      Bitmask references gif_136: 1192876648
+      Bitmask references gif_137: -947378638
+      Bitmask references gif_138: -1709363898
+      Bitmask references gif_139: -717108595
+      Bitmask references gif_14: 972435204
+      Bitmask references gif_140: -1188502425
+      Bitmask references gif_141: 1577771185
+      Bitmask references gif_142: -1376290314
+      Bitmask references gif_143: 693366349
+      Bitmask references gif_144: 388213913
+      Bitmask references gif_145: 1203345314
+      Bitmask references gif_146: -1871931853
+      Bitmask references gif_147: 507691687
+      Bitmask references gif_148: -1387084484
+      Bitmask references gif_149: -1797726052
+      Bitmask references gif_15: -1429421342
+      Bitmask references gif_150: -1987416847
+      Bitmask references gif_151: -1821018765
+      Bitmask references gif_152: -533238828
+      Bitmask references gif_153: 2092901070
+      Bitmask references gif_154: 1355237987
+      Bitmask references gif_155: -658402561
+      Bitmask references gif_156: -624362631
+      Bitmask references gif_157: 1929540980
+      Bitmask references gif_158: 2072033985
+      Bitmask references gif_159: 1144012690
+      Bitmask references gif_16: -455259539
+      Bitmask references gif_160: -727253887
+      Bitmask references gif_161: -718774584
+      Bitmask references gif_162: 1976697771
+      Bitmask references gif_163: -1790016899
+      Bitmask references gif_164: -586402894
+      Bitmask references gif_165: -741551794
+      Bitmask references gif_166: 689026771
+      Bitmask references gif_167: 1677680128
+      Bitmask references gif_168: -815873401
+      Bitmask references gif_169: -1871116272
+      Bitmask references gif_17: -1689507508
+      Bitmask references gif_18: 2030619452
+      Bitmask references gif_19: -1165982294
+      Bitmask references gif_2: -289584919
+      Bitmask references gif_20: 1878182148
+      Bitmask references gif_21: 1065507485
+      Bitmask references gif_22: 546634823
+      Bitmask references gif_23: 129069241
+      Bitmask references gif_24: 1914985343
+      Bitmask references gif_25: -812658900
+      Bitmask references gif_26: -51942739
+      Bitmask references gif_27: -180520441
+      Bitmask references gif_28: -1201194168
+      Bitmask references gif_29: 265630994
+      Bitmask references gif_3: -1711553172
+      Bitmask references gif_30: -2088382815
+      Bitmask references gif_31: 642921479
+      Bitmask references gif_32: -1571844123
+      Bitmask references gif_33: -133765999
+      Bitmask references gif_34: -1054757958
+      Bitmask references gif_35: -1478324304
+      Bitmask references gif_36: -1762467266
+      Bitmask references gif_37: -800036955
+      Bitmask references gif_38: -2081835147
+      Bitmask references gif_39: 2139334647
+      Bitmask references gif_4: 1028779898
+      Bitmask references gif_40: -559921413
+      Bitmask references gif_41: -279649960
+      Bitmask references gif_42: -1056322068
+      Bitmask references gif_43: 18419595
+      Bitmask references gif_44: 922944495
+      Bitmask references gif_45: 1217745549
+      Bitmask references gif_46: 955914485
+      Bitmask references gif_47: -1096255940
+      Bitmask references gif_48: 787635290
+      Bitmask references gif_49: 1403721982
+      Bitmask references gif_5: -378676599
+      Bitmask references gif_50: -83978384
+      Bitmask references gif_51: 2022783074
+      Bitmask references gif_52: 452162320
+      Bitmask references gif_53: -1441866717
+      Bitmask references gif_54: 1271113593
+      Bitmask references gif_55: 1063047254
+      Bitmask references gif_56: 358177154
+      Bitmask references gif_57: -1526794275
+      Bitmask references gif_58: -1098739915
+      Bitmask references gif_59: 813181740
+      Bitmask references gif_6: 1798672478
+      Bitmask references gif_60: 1888401781
+      Bitmask references gif_61: 775002740
+      Bitmask references gif_62: -329904919
+      Bitmask references gif_63: 815282979
+      Bitmask references gif_64: -146603221
+      Bitmask references gif_65: 292930881
+      Bitmask references gif_66: 610623817
+      Bitmask references gif_67: -1507325804
+      Bitmask references gif_68: -1342517317
+      Bitmask references gif_69: 355644546
+      Bitmask references gif_7: -862805162
+      Bitmask references gif_70: -872275309
+      Bitmask references gif_71: 2058885190
+      Bitmask references gif_72: 683469451
+      Bitmask references gif_73: 399791048
+      Bitmask references gif_74: 1779894569
+      Bitmask references gif_75: 2078316682
+      Bitmask references gif_76: -1228595930
+      Bitmask references gif_77: -1276509105
+      Bitmask references gif_78: -1676046281
+      Bitmask references gif_79: -610714262
+      Bitmask references gif_8: 1284645997
+      Bitmask references gif_80: -329517639
+      Bitmask references gif_81: -1384663890
+      Bitmask references gif_82: 1322171513
+      Bitmask references gif_83: 208854170
+      Bitmask references gif_84: 2107861902
+      Bitmask references gif_85: 1391395824
+      Bitmask references gif_86: 1580106193
+      Bitmask references gif_87: -1700629840
+      Bitmask references gif_88: -1172061300
+      Bitmask references gif_89: -229015384
+      Bitmask references gif_9: 2015486648
+      Bitmask references gif_90: -419891572
+      Bitmask references gif_91: 1226420887
+      Bitmask references gif_92: -957965219
+      Bitmask references gif_93: 2141991829
+      Bitmask references gif_94: -1585930153
+      Bitmask references gif_95: -1200870320
+      Bitmask references gif_96: 1308917570
+      Bitmask references gif_97: -1990103806
+      Bitmask references gif_98: 1467680344
+      Bitmask references gif_99: -2081282769
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
