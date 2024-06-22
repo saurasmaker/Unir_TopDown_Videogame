@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(CharacterAnimationsController))]
 [RequireComponent(typeof(ForwardDetector))]
 public class PlayerController : SingletonMonoBehaviour<PlayerController>
 {
@@ -15,13 +15,13 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
     private float _movementSpeed = 2f, _movementDistance = 1f;
 
     private ForwardDetector _forwardDetector;
-    private Animator _animator;
+    private CharacterAnimationsController _animationsController;
 
-    private bool _isMoving = false;
+    private bool _move = false, _isMoving = false;
     private Vector2 _lastDir = Vector3.zero;
 
 
-    public ForwardDetector InteractableDetector { get { return _forwardDetector; } }
+    #region Properties
     public Vector2 LastDir
     {
         get { return _lastDir; }
@@ -35,71 +35,65 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
         }
     }
 
+    public bool IsMoving 
+    { 
+        get => _isMoving; 
+        set
+        {
+            if(_isMoving != value)
+            {
+                _isMoving = value;
+                if (_isMoving)
+                    OnStartMoving?.Invoke();
+                else
+                    OnStopMoving?.Invoke();
+            }
+        }
+    }
+    #endregion
+
+
+    #region MonoBehaviour Methods
     protected override void OnAwake()
     {
         base.OnAwake();
 
         _forwardDetector = GetComponent<ForwardDetector>();
-        _animator = GetComponent<Animator>();
+        _animationsController = GetComponent<CharacterAnimationsController>();
     }
 
     override protected void OnStart()
     {
         base.OnStart();
 
-        OnLastDirChange.AddListener((dir) =>
-        {
-            if(dir == Vector2.left)
-                _animator.Play("WalkLeft@Player");
-            if (dir == Vector2.right)
-                _animator.Play("WalkRight@Player");
-            if (dir == Vector2.up)
-                _animator.Play("WalkUp@Player");
-            if (dir == Vector2.down)
-                _animator.Play("WalkDown@Player");
-        });
-
-        OnStopMoving.AddListener(() =>
-        {
-            if (_lastDir == Vector2.left)
-                _animator.Play("IdleLeft@Player");
-            if (_lastDir == Vector2.right)
-                _animator.Play("IdleRight@Player");
-            if (_lastDir == Vector2.up)
-                _animator.Play("IdleUp@Player");
-            if (_lastDir == Vector2.down)
-                _animator.Play("IdleDown@Player");
-        });
-
+        OnStopMoving.AddListener(() => _animationsController.SetIdleAnimation(LastDir));
 
         InputsManager.Instance.MoveAction.started += StartMoving;
         InputsManager.Instance.MoveAction.canceled += StopMoving;
 
-
-
+        LastDir = Vector2.down;
+        _animationsController.SetIdleAnimation(LastDir);
     }
-
-    private void Initialize()
-    {
-        
-    }
+    #endregion
 
     private Coroutine _movingRoutine = null;
     private void StartMoving(InputAction.CallbackContext context)
     {
-        _isMoving = true;
-        _movingRoutine ??= StartCoroutine(MovingRoutine());
+        _move = true;
+        if(_movingRoutine == null)
+            _movingRoutine = StartCoroutine(MovingRoutine());
     }
 
     private IEnumerator MovingRoutine()
     {
         yield return StartCoroutine(FirstStepRoutine());
 
-        OnStartMoving?.Invoke();
-        while (_isMoving)
+        IsMoving = true;
+        while (_move)
         {
             if(!TryReadMovementInput(out Vector2 movementInput))
             {
+                _animationsController.SetIdleAnimation(LastDir);
                 yield return new WaitForEndOfFrame();
                 continue;
             }
@@ -110,8 +104,12 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
             float t = 0f;
             Vector2 startPos = transform.position;
             Vector2 endPos = startPos + movementInput * _movementDistance;
+            
+            LastDir = movementInput;
 
-            while(t < 1f)
+            _animationsController.SetWalkingAnimation(movementInput);
+                
+            while (t < 1f)
             {
                 t += Time.deltaTime * _movementSpeed;
                 if (t >= 1f) t = 1f;
@@ -120,9 +118,8 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
                 yield return new WaitForEndOfFrame();
             }
         }
-        OnStopMoving?.Invoke();
         _movingRoutine = null;
-
+        IsMoving = false;
     }
 
     private IEnumerator FirstStepRoutine()
@@ -136,9 +133,10 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
     private bool TryReadMovementInput(out Vector2 res)
     {
         Vector2 moveInput = InputsManager.Instance.MoveAction.ReadValue<Vector2>();
-        if (moveInput.x > 0 && moveInput.y > 0)
+        if (Mathf.Abs(moveInput.x) > 0 && Mathf.Abs(moveInput.y) > 0)
             moveInput = Vector2.zero;
-        
+
+       
         if(moveInput != Vector2.zero)
         {
             res = moveInput.normalized;
@@ -153,14 +151,9 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
 
     private void StopMoving(InputAction.CallbackContext context)
     {
-        _isMoving = false;
-        
-        /*
-        if (_movingRoutine != null)
-        {
-            StopCoroutine(_movingRoutine);
-            _movingRoutine = null;
-        } 
-        */
+        _move = false;
     }
+
+
+    
 }

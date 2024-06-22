@@ -762,12 +762,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2408,11 +2408,12 @@ GameObject:
   m_Component:
   - component: {fileID: 935121359}
   - component: {fileID: 935121358}
-  - component: {fileID: 935121361}
-  - component: {fileID: 935121360}
+  - component: {fileID: 935121364}
   - component: {fileID: 935121363}
   - component: {fileID: 935121362}
-  - component: {fileID: 935121364}
+  - component: {fileID: 935121365}
+  - component: {fileID: 935121361}
+  - component: {fileID: 935121360}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -2628,6 +2629,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &935121365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935121356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9822c02bf63f4814cbafe00c86601e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
+  _animationsKeyName: Player
 --- !u!1 &980224461
 GameObject:
   m_ObjectHideFlags: 0
