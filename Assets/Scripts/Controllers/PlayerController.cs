@@ -91,15 +91,12 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
         IsMoving = true;
         while (_move)
         {
-            if(!TryReadMovementInput(out Vector2 movementInput))
+            if(!TryReadMovementInput(out Vector2 movementInput) || _forwardDetector.DetectEntityInDirection(movementInput))
             {
                 _animationsController.SetIdleAnimation(LastDir);
                 yield return new WaitForEndOfFrame();
                 continue;
             }
-            yield return new WaitForEndOfFrame();
-            if (_forwardDetector.CurrentObstacleDetected != null)
-                continue;
 
             float t = 0f;
             Vector2 startPos = transform.position;
@@ -124,8 +121,12 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
 
     private IEnumerator FirstStepRoutine()
     {
-        if(TryReadMovementInput(out Vector2 movementInput) && LastDir != movementInput)
-            yield return new WaitForSeconds(0.1f);
+        if (TryReadMovementInput(out Vector2 movementInput))
+        {
+            _animationsController.SetIdleAnimation(movementInput);
+            if (LastDir != movementInput)
+                yield return new WaitForSeconds(0.1f);
+        }
 
         LastDir = movementInput;
     }

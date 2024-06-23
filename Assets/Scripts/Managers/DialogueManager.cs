@@ -16,7 +16,7 @@ public class DialogueManager : SingletonMonoBehaviour<DialogueManager>
     [SerializeField]
     private Image _waitForInputImage;
 
-    bool _nextDialogue = false;
+    bool _nextDialogue = false, _canNextDialogue = false;
 
     override protected void OnAwake()
     {
@@ -36,7 +36,7 @@ public class DialogueManager : SingletonMonoBehaviour<DialogueManager>
     {
         base.OnStart();
 
-        InputsManager.Instance.DialogueNextIcon.performed += (_) => _nextDialogue = true;
+        InputsManager.Instance.DialogueNextIcon.performed += (_) => _nextDialogue = _canNextDialogue && true;
     }
 
     public void StartDialogue(string[] texts)
@@ -46,22 +46,25 @@ public class DialogueManager : SingletonMonoBehaviour<DialogueManager>
 
     private IEnumerator DialogueRoutine(string[] texts)
     {
-        _text.text = "";
         _uiController.OpenInterface();
 
         foreach (string s in texts)
         {
+            _text.text = "";
             foreach (char c in s)
             {
                 _text.text += c;
                 yield return new WaitForSeconds(_speed);
             }
 
+            _canNextDialogue = true;
             _waitForInputImage.gameObject.SetActive(true);
             while (!_nextDialogue)
                 yield return new WaitForEndOfFrame();
+
             _waitForInputImage.gameObject.SetActive(false);
-            _nextDialogue = false;
+
+            _canNextDialogue = _nextDialogue = false;
         }
 
         _uiController.CloseInterface();

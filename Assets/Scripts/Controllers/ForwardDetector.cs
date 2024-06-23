@@ -10,7 +10,7 @@ public class ForwardDetector : MonoBehaviour
     private InteractableController _currentInteractableDetected = null;
     private GameObject _currentObstacleDetected = null;
 
-    private Vector3 _rayDirection;
+    private Vector2 _rayDirection;
     
     
     public InteractableController CurrentInteractableDetected { 
@@ -46,7 +46,7 @@ public class ForwardDetector : MonoBehaviour
         }
     }
 
-    public Vector3 RayDirection
+    public Vector2 RayDirection
     {
         get { return _rayDirection; }
         set { _rayDirection = value; }
@@ -63,20 +63,21 @@ public class ForwardDetector : MonoBehaviour
 
     private void Update()
     {
-        DetectEntityInForward();
+        DetectEntityInDirection(_rayDirection);
     }
 
+    /*
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Vector3 direction = _rayDirection;
         Gizmos.DrawRay(transform.position, direction);
     }
+    */
 
-
-    private void DetectEntityInForward()
+    public bool DetectEntityInDirection(Vector2 dir)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, _rayDirection, 1f, ~LayerMask.GetMask("Player"));
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 1f, ~LayerMask.GetMask("Player"));
         if (hit.collider != null)
         {
             GameObject hitGo = hit.collider.gameObject;
@@ -84,12 +85,13 @@ public class ForwardDetector : MonoBehaviour
 
             if (hitGo.TryGetComponent(out InteractableController ic))
                 CurrentInteractableDetected = ic;
+
+            return true;
         }
-        else
-        {
-            CurrentInteractableDetected = null;
-            CurrentObstacleDetected = null;
-        }
+
+        CurrentInteractableDetected = null;
+        CurrentObstacleDetected = null;
+        return false;
     }
 
     private void Interact()
