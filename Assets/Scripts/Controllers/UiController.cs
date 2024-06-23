@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class UiController : MonoBehaviour 
 {
     private const string PANEL_CONTENT_NULL_ERROR = "Content panel is not referenced...";
+
+    public UnityEvent OnOpenInferface, OnCloseInterface;
 
     [SerializeField]
     GameObject _contentPanel = null;
@@ -23,7 +26,7 @@ public class UiController : MonoBehaviour
         if (warning)
             Debug.LogWarning(PANEL_CONTENT_NULL_ERROR);
 
-        return warning;
+        return !warning;
     }
 
     private void Initialize()
@@ -34,13 +37,19 @@ public class UiController : MonoBehaviour
     public void OpenInterface()
     {
         if (_contentPanel != null)
+        {
             _contentPanel.SetActive(true);
+            OnOpenInferface?.Invoke();
+        }
     }
 
     public void CloseInterface()
     {
         if (_contentPanel != null)
+        {
             _contentPanel.SetActive(false);
+            OnCloseInterface?.Invoke();
+        }
     }
 
     public void ToggleInterface()

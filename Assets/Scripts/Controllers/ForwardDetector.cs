@@ -80,16 +80,10 @@ public class ForwardDetector : MonoBehaviour
         if (hit.collider != null)
         {
             GameObject hitGo = hit.collider.gameObject;
-            switch (LayerMask.LayerToName(hitGo.layer))
-            {
-                case "Interactable":
-                    CurrentInteractableDetected = hitGo.GetComponent<InteractableController>();
-                    CurrentObstacleDetected = hitGo;
-                    break;
-                case "Obstacle":
-                    CurrentObstacleDetected = hitGo;
-                    break;
-            }
+            CurrentObstacleDetected = hitGo;
+
+            if (hitGo.TryGetComponent(out InteractableController ic))
+                CurrentInteractableDetected = ic;
         }
         else
         {

@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 9000615740043405495}
   - component: {fileID: 5431144053521052536}
   - component: {fileID: 7710738732574204740}
+  - component: {fileID: -7022387641495841868}
   m_Layer: 5
-  m_Name: Item (Image)
+  m_Name: Storable (Image)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,6 +123,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-7022387641495841868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469570878124649931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ddef647fd47a944a93e3884f7061f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uid: 
+  _image: {fileID: 5431144053521052536}
+  _countText: {fileID: 1084789448267205114}
+  _countBackground: {fileID: 1977504319012191523}
 --- !u!1 &5991986293449263380
 GameObject:
   m_ObjectHideFlags: 0

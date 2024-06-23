@@ -10,56 +10,44 @@ public class InputsManager : SingletonMonoBehaviour<InputsManager>
     #endregion
 
 
-
     #region Attributes
     private InputActionAsset _inputActions;
-    private InputAction _moveAction = null,
-        _interactAction = null, _openInventoryAction = null, _closeInventoryAction;
+
+    private InputActionMap _playerActionMap, _uiActionMap, _dialogueActionMap;
+
+    // Player Actions
+    private InputAction _moveAction = null, _interactAction = null,
+        _openInventoryAction = null;
+
+    // UI Actions 
+    private InputAction _closeInventoryAction = null;
+
+    // Dialogue Actions
+    private InputAction _dialogueNextAction = null, _dialogueOmitAction = null;
     #endregion
 
 
 
     #region Properties
 
-    #region Actions
-    public InputAction MoveAction
-    {
-        get
-        {
-            _moveAction ??= _inputActions.FindAction("Move");
-            return _moveAction;
-        }
-    }
-
-    public InputAction InteractAction
-    {
-        get
-        {
-            _interactAction ??= _inputActions.FindAction("Interact");
-            return _interactAction;
-        }
-    }
-
-    public InputAction OpenInventoryAction
-    {
-        get
-        {
-            _openInventoryAction ??= _inputActions.FindAction("OpenInventory");
-            return _openInventoryAction;
-        }
-    }
-
-    public InputAction CloseInventoryAction
-    {
-        get
-        {
-            _closeInventoryAction ??= _inputActions.FindAction("CloseInventory");
-            return _closeInventoryAction;
-        }
-    }
+    #region PlayerActions
+    public InputAction MoveAction { get => _moveAction; }
+    public InputAction InteractAction { get => _interactAction; }
+    public InputAction OpenInventoryAction { get => _openInventoryAction; }
     #endregion
 
+    #region UI Actions
+    public InputAction CloseInventoryAction { get => _closeInventoryAction; }
     #endregion
+
+    #region Dialogue Actions
+    public InputAction DialogueNextIcon { get => _dialogueNextAction; }
+    public InputAction DialogueOmitAction { get => _dialogueOmitAction; }
+    #endregion
+
+
+    #endregion
+
 
 
 
@@ -88,7 +76,21 @@ public class InputsManager : SingletonMonoBehaviour<InputsManager>
 
         if (_inputActions == null && _playerInput != null)
             _inputActions = _playerInput.actions;
+
+        _playerActionMap = _inputActions.FindActionMap("Player");
+        _uiActionMap = _inputActions.FindActionMap("UI");
+        _dialogueActionMap = _inputActions.FindActionMap("Dialogue");
+
+        _moveAction = _playerActionMap.FindAction("Move");
+        _interactAction = _playerActionMap.FindAction("Interact");
+        _openInventoryAction = _playerActionMap.FindAction("OpenInventory");
+
+        _closeInventoryAction = _uiActionMap.FindAction("CloseInventory");
+
+        _dialogueOmitAction = _dialogueActionMap.FindAction("Omit");
+        _dialogueNextAction = _dialogueActionMap.FindAction("Next");
     }
+    #endregion
 
     public void EnablePlayerActions()
     {
@@ -99,5 +101,10 @@ public class InputsManager : SingletonMonoBehaviour<InputsManager>
     {
         _playerInput.SwitchCurrentActionMap("UI");
     }
-    #endregion
+
+    public void EnableDialogueActions()
+    {
+        _playerInput.SwitchCurrentActionMap("Dialogue");
+    }
+    
 }
